@@ -19,8 +19,8 @@ jobs:
       - name: Push to Hugging Face Space
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-          HF_USER: jmsalcedo
-          HF_SPACE: agente-tributario-autonomo
+          HF_USER: jmsmartinez
+          HF_SPACE: ia_final_agente-tributario-rdes
         run: |
           git config --global user.email "jmsalcedo@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
