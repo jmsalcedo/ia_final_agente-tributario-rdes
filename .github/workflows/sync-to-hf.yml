@@ -3,7 +3,6 @@ name: Sync to Hugging Face Spaces
 on:
   push:
     branches: [main]
-  # Permite ejecutar manualmente desde GitHub
   workflow_dispatch:
 
 jobs:
@@ -14,7 +13,37 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          lfs: true
+
+      - name: Configure git
+        run: |
+          git config --global user.email "jmsalcedo@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
+
+      - name: Remove binary files not needed in HF Space
+        run: |
+          # Eliminar archivos binarios que HF Spaces rechaza.
+          # Estos archivos solo viven en GitHub (entregables del informe);
+          # el demo no los necesita.
+          git rm -r --cached --ignore-unmatch \
+            "informe/Informe_Técnico_Agente_TributarioRDES.pdf" \
+            "informe/figs/" \
+            "*.pdf" \
+            "*.png" \
+            "*.jpg" \
+            "*.jpeg" \
+            "*.gif" \
+            "*.zip" \
+            "*.docx" \
+            "*.xlsx" \
+            "*.pptx" || true
+
+          # Tambien borra fisicamente del workspace para que no se incluyan
+          rm -rf informe/figs/ || true
+          find . -type f \( -name "*.pdf" -o -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" -o -name "*.gif" -o -name "*.zip" -o -name "*.docx" -o -name "*.xlsx" -o -name "*.pptx" \) -delete || true
+
+          # Commit el cambio en la rama temporal
+          git add -A
+          git commit -m "chore: exclude binary files for HF Spaces push" || echo "Nothing to commit"
 
       - name: Push to Hugging Face Space
         env:
@@ -22,6 +51,4 @@ jobs:
           HF_USER: jmsmartinez
           HF_SPACE: ia_final_agente-tributario-rdes
         run: |
-          git config --global user.email "jmsalcedo@users.noreply.github.com"
-          git config --global user.name "GitHub Actions"
           git push --force https://${HF_USER}:${HF_TOKEN}@huggingface.co/spaces/${HF_USER}/${HF_SPACE} main
