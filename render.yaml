@@ -15,7 +15,7 @@ services:
     healthCheckPath: /_stcore/health
     envVars:
       # IMPORTANTE: añadir manualmente la clave en el panel de Render
-      # https://console.groq.com → API Keys (gratis, sin tarjeta)
+      # https://console.groq.com → API Keys
       - key: GROQ_API_KEY
         sync: false
       - key: GROQ_MODEL_ID
