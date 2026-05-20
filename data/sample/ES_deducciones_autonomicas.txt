@@ -1,0 +1,78 @@
+DEDUCCIONES AUTONÓMICAS RELEVANTES EN EL IRPF ESPAÑOL — RESUMEN OPERATIVO
+Fuente: Manual Práctico Renta 2024 Tomo 2 (AEAT). Documento sintético.
+
+==========================================================================
+1. NATURALEZA DE LAS DEDUCCIONES AUTONÓMICAS
+==========================================================================
+
+Cada Comunidad Autónoma (CCAA) tiene potestad normativa sobre el tramo autonómico
+del IRPF. Estas deducciones se aplican EN LA CUOTA, después de calcular el impuesto
+estatal, y reducen el importe a pagar de manera directa. Son acumulativas con las
+deducciones estatales generales.
+
+==========================================================================
+2. CATEGORÍAS HABITUALES DE DEDUCCIONES AUTONÓMICAS
+==========================================================================
+
+Aunque cada CCAA tiene su propio cuadro de deducciones, las categorías más comunes son:
+
+(a) FAMILIA: por nacimiento o adopción, familia numerosa, monoparental, cuidado de
+descendientes con discapacidad.
+(b) VIVIENDA: alquiler de vivienda habitual para jóvenes (variable según CCAA y edad),
+rehabilitación energética, adquisición de primera vivienda en municipios pequeños.
+(c) EDUCACIÓN: gastos en libros, material escolar, idiomas, estudios universitarios
+fuera del municipio de residencia.
+(d) DONATIVOS: a fundaciones, federaciones deportivas, partidos políticos autonómicos.
+(e) INVERSIÓN PRODUCTIVA: en empresas de nueva creación o cotizadas en mercados
+alternativos autonómicos (Madrid, Cataluña, etcétera).
+(f) MEDIO AMBIENTE: inversiones en energías renovables, autoconsumo eléctrico.
+
+==========================================================================
+3. EJEMPLOS REPRESENTATIVOS POR CCAA (REFERENCIA, NO EXHAUSTIVO)
+==========================================================================
+
+MADRID:
+- Deducción del 25% sobre cantidades invertidas en sociedades de nueva creación
+  (límite 12.000 € de inversión por año).
+- Deducción por nacimiento del primer hijo (600 €), segundo (750 €), tercero o
+  posteriores (900 €).
+- Deducción por arrendamiento de vivienda habitual para menores de 35 años: 30% de
+  lo pagado, hasta 1.237 €/año, con límites de renta del arrendatario.
+
+CATALUÑA:
+- Deducción por alquiler de vivienda habitual para jóvenes (10%, hasta 300 €/año).
+- Deducción por donativos a fundaciones culturales catalanas (15%).
+- Deducción por inversión en acciones de entidades cotizadas en mercados
+  alternativos.
+
+ANDALUCÍA:
+- Deducción por inversión en vivienda habitual protegida.
+- Deducción por adquisición o rehabilitación de vivienda en municipios con problemas
+  de despoblación.
+- Deducción autonómica por familia numerosa (200-400 € según categoría).
+
+==========================================================================
+4. INTERACCIÓN CON LA TRIBUTACIÓN DE AUTÓNOMOS
+==========================================================================
+
+Las deducciones autonómicas son COMPATIBLES con la tributación como autónomo. Un
+ingeniero de software autónomo residente en Madrid puede, por ejemplo:
+- Tributar sus rendimientos de actividad económica en estimación directa simplificada.
+- Aplicar la deducción autonómica por arrendamiento si tiene menos de 35 años.
+- Aplicar la deducción por inversión en startup si invierte en una sociedad joven.
+- Beneficiarse de la deducción por familia numerosa si aplica.
+
+==========================================================================
+5. CONSIDERACIONES PRÁCTICAS
+==========================================================================
+
+- La residencia fiscal en una CCAA se determina por el lugar donde se ha permanecido
+  más días en el año (artículo 72 LIRPF). Es relevante porque condiciona qué
+  deducciones aplican.
+- Las deducciones requieren justificación documental (facturas, contratos,
+  certificados) que debe conservarse durante 4 años.
+- Algunas deducciones tienen límites combinados con la renta del contribuyente
+  (umbrales de base liquidable).
+
+Para el detalle exacto consulte el Manual Práctico Renta 2024 Tomo 2 — Deducciones
+Autonómicas, disponible en la sede electrónica de la AEAT.

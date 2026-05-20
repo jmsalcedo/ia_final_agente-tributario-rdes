@@ -1,0 +1,108 @@
+MANUAL PRÁCTICO RENTA 2024 — RESUMEN ESQUEMÁTICO PARA AUTÓNOMOS (ESPAÑA)
+Fuente: Agencia Tributaria (AEAT). Documento sintético para indexación del agente.
+
+==========================================================================
+1. RÉGIMEN APLICABLE A TRABAJADORES POR CUENTA PROPIA (AUTÓNOMOS)
+==========================================================================
+
+En España, las personas físicas que realizan una actividad económica por cuenta propia
+tributan sus rendimientos en el Impuesto sobre la Renta de las Personas Físicas (IRPF)
+como "Rendimientos de Actividades Económicas". Existen tres regímenes principales para
+determinar el rendimiento neto:
+
+(a) ESTIMACIÓN DIRECTA NORMAL: aplicable cuando el importe neto de la cifra de negocios
+del año anterior supera los 600.000 euros. El cálculo del rendimiento neto sigue las
+normas del Impuesto sobre Sociedades.
+
+(b) ESTIMACIÓN DIRECTA SIMPLIFICADA: régimen por defecto para la mayoría de autónomos
+(servicios profesionales como ingenieros de software). Se aplica si la cifra de negocios
+del año anterior no supera 600.000 euros y no se ha renunciado al régimen. Permite
+deducir un 5% del rendimiento neto previo (con un máximo de 2.000 euros) en concepto de
+gastos de difícil justificación.
+
+(c) ESTIMACIÓN OBJETIVA (MÓDULOS): reservada a determinadas actividades del sector
+agrario, ganadero y algunos servicios. NO es aplicable a profesionales independientes
+del ámbito técnico (ingeniería, consultoría informática).
+
+==========================================================================
+2. GASTOS DEDUCIBLES PARA UN AUTÓNOMO EN ESTIMACIÓN DIRECTA SIMPLIFICADA
+==========================================================================
+
+Son fiscalmente deducibles los gastos necesarios para la obtención de los ingresos,
+siempre que estén correctamente justificados con factura y registrados en los libros
+contables obligatorios. Categorías principales:
+
+- Cotizaciones a la Seguridad Social del autónomo (cuota mensual al RETA).
+- Consumos de explotación (material de oficina, software, licencias).
+- Amortizaciones de inmovilizado material e inmaterial (equipos informáticos, software).
+- Suministros de la vivienda afecta a la actividad (luz, agua, internet, gas): se permite
+  deducir el 30% de la parte proporcional de los metros cuadrados afectos a la actividad,
+  según el artículo 30.2.5.b LIRPF.
+- Manutención cuando se desarrolla la actividad: hasta 26,67 euros diarios en territorio
+  español (48 euros en el extranjero), siempre que se pague mediante medios electrónicos.
+- Vehículo: SOLO si está afecto exclusivamente a la actividad (norma muy restrictiva).
+  Para profesionales el vehículo NO suele considerarse afecto.
+- Cuotas de colegios profesionales obligatorios.
+- Gastos financieros vinculados a la actividad.
+- Primas de seguros de responsabilidad civil profesional.
+- 5% del rendimiento neto previo como "gastos de difícil justificación" (máximo 2.000 €).
+
+==========================================================================
+3. ESCALA Y RETENCIONES
+==========================================================================
+
+El rendimiento neto se integra en la base imponible general del IRPF, tributando según la
+escala progresiva estatal + autonómica. Los tramos estatales 2024 son:
+- Hasta 12.450 €: 19%
+- 12.450 – 20.200 €: 24%
+- 20.200 – 35.200 €: 30%
+- 35.200 – 60.000 €: 37%
+- 60.000 – 300.000 €: 45%
+- Más de 300.000 €: 47%
+A estos tipos se suman los marginales autonómicos correspondientes.
+
+Las facturas emitidas a otros profesionales o empresas residentes en España están sujetas
+a retención del 15% (7% durante los tres primeros años de actividad por nuevos autónomos).
+
+==========================================================================
+4. OBLIGACIONES FORMALES
+==========================================================================
+
+- Alta en el Censo (Modelo 036/037) antes del inicio de la actividad.
+- Alta en el RETA de la Seguridad Social.
+- IRPF: pagos fraccionados trimestrales mediante Modelo 130 (estimación directa) si más
+  del 30% de las facturas NO llevan retención. Declaración anual Modelo 100.
+- IVA: declaraciones trimestrales Modelo 303 y resumen anual Modelo 390 (salvo
+  exenciones, p. ej. servicios médicos o educativos).
+- Libro registro de ingresos, gastos y bienes de inversión.
+
+==========================================================================
+5. ESTRATEGIAS DE OPTIMIZACIÓN FISCAL LÍCITAS
+==========================================================================
+
+Algunas prácticas legales que pueden reducir la carga fiscal de un autónomo:
+- Aportaciones a planes de pensiones individuales (límite 1.500 €/año desde 2022).
+- Inversión en planes de pensiones de empleo o productos paneuropeos PEPP.
+- Si se trabaja desde casa, calcular correctamente el % de la vivienda afecto.
+- Considerar la constitución de una sociedad limitada cuando el beneficio anual neto
+  supera consistentemente los 60.000 € (análisis caso por caso, no automático).
+- Diferimiento mediante aportaciones a sistemas de previsión social empresarial.
+- Atención a las deducciones autonómicas (familia numerosa, nacimiento, alquiler joven,
+  etcétera) que varían según comunidad autónoma (ver Tomo 2 del Manual de Renta).
+
+==========================================================================
+6. RIESGOS Y RESTRICCIONES LEGALES
+==========================================================================
+
+- La afectación parcial de gastos personales (vivienda, vehículo) debe estar
+  correctamente justificada; la Agencia Tributaria suele inspeccionar estos conceptos.
+- Las operaciones vinculadas (con familiares o sociedades participadas) deben valorarse
+  a precio de mercado para evitar ajustes.
+- Facturar a través de una sociedad propia ("interposición societaria") puede ser
+  considerada simulación si el motivo principal es eludir el IRPF; jurisprudencia del
+  Tribunal Supremo y consultas vinculantes de la DGT son restrictivas en este ámbito.
+- La presentación tardía conlleva recargos (1% al mes los primeros 12 meses, máximo 15%).
+
+Este resumen sintetiza información del Manual Práctico Renta 2024 publicado por la AEAT.
+Para consultas específicas, acuda a la sede electrónica https://sede.agenciatributaria.gob.es
+o consulte a un asesor fiscal colegiado.

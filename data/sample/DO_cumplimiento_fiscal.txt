@@ -1,0 +1,101 @@
+CUMPLIMIENTO FISCAL DEL CONTRIBUYENTE DOMINICANO — GUÍA PRÁCTICA
+Fuente: DGII y Código Tributario. Documento sintético para el agente.
+
+==========================================================================
+1. RNC Y OBLIGACIÓN DE INSCRIPCIÓN
+==========================================================================
+
+Todo profesional que desarrolla actividades generadoras de renta en territorio
+dominicano debe estar inscrito en el Registro Nacional del Contribuyente (RNC) ante
+la DGII. La inscripción puede realizarse de forma presencial en una administración
+local o de forma electrónica a través de la Oficina Virtual.
+
+Es obligatorio:
+- Antes de iniciar cualquier actividad económica.
+- Independientemente del régimen tributario al que se acoja después.
+- Para emitir comprobantes fiscales electrónicos (e-CF) o facturas válidas.
+
+==========================================================================
+2. COMPROBANTES FISCALES ELECTRÓNICOS (e-CF)
+==========================================================================
+
+La DGII está implementando el sistema de facturación electrónica de forma escalonada
+(Norma General 06-2018 y posteriores). Tipos de comprobantes:
+- e-CF de crédito fiscal: para clientes con RNC que deducen ITBIS.
+- e-CF de consumo final: para particulares.
+- e-CF gubernamentales: para entidades del Estado.
+- e-CF de proveedores informales o no residentes.
+
+El contribuyente debe emitir el e-CF en el momento de prestación del servicio o
+entrega del bien. La conservación digital es obligatoria por 10 años.
+
+==========================================================================
+3. CALENDARIO DE OBLIGACIONES DECLARATIVAS
+==========================================================================
+
+Para una persona física en régimen ordinario:
+- Mensual: Declaración de ITBIS (Formulario IT-1) — 20 del mes siguiente.
+- Mensual: Retenciones de ISR de empleados, si aplica (Formulario IR-3).
+- Trimestral: Anticipos de ISR si la actividad generó renta neta el año anterior.
+- Anual: Declaración Jurada del ISR (Formulario IR-1) — antes del 31 de marzo.
+
+Para una persona física en RST de Ingresos:
+- Anual: Declaración Jurada simplificada — antes del 28 de febrero.
+- Trimestral: Cuatro cuotas anticipadas del impuesto estimado.
+- No requiere declaración mensual de ITBIS.
+
+==========================================================================
+4. RETENCIONES Y ANTICIPOS
+==========================================================================
+
+Los profesionales independientes que prestan servicios a personas jurídicas o
+entidades del Estado deben aceptar retenciones del 5% sobre el monto bruto de cada
+factura (Formulario IR-13). Esta retención constituye un ANTICIPO del ISR anual y se
+acredita al momento de la declaración.
+
+Adicionalmente, los contribuyentes que generaron renta neta en el año anterior deben
+pagar Anticipos del ISR del año en curso, calculados como el 1.5% del ingreso bruto
+anterior, distribuidos en cuotas mensuales o trimestrales según el caso.
+
+==========================================================================
+5. SANCIONES FRECUENTES
+==========================================================================
+
+- Por presentación tardía de declaraciones: multa del 10% del impuesto debido, más
+  intereses indemnizatorios al 1.10% mensual sobre el monto vencido.
+- Por no emitir comprobantes fiscales: multas que van de 5 a 30 salarios mínimos.
+- Por consignar datos falsos: posible configuración de defraudación tributaria con
+  sanciones penales (artículo 236 del Código Tributario).
+- Por incumplimiento del deber de información: multa de 5 salarios mínimos.
+
+==========================================================================
+6. RECURSOS Y RECONSIDERACIONES
+==========================================================================
+
+El contribuyente que no esté de acuerdo con una determinación de la DGII puede:
+1. Presentar Recurso de Reconsideración ante la propia DGII (30 días desde
+   notificación).
+2. Si se mantiene, recurrir al Tribunal Superior Administrativo (TSA).
+3. Como última instancia, recurrir ante la Suprema Corte de Justicia.
+
+La asistencia profesional de un Contador Público Autorizado (CPA) o de un abogado
+tributarista es altamente recomendable en cualquier procedimiento contencioso.
+
+==========================================================================
+7. ESPECIAL — TRABAJADORES DEL SECTOR TECNOLÓGICO
+==========================================================================
+
+Los profesionales de tecnología (desarrolladores, ingenieros de software,
+consultores TI) suelen prestar servicios a clientes en el extranjero. Aspectos
+clave:
+- Los ingresos provenientes del exterior están sujetos a ISR como cualquier otra
+  renta de fuente extranjera obtenida por residentes (artículo 269 Código Tributario).
+- Existe la posibilidad de aplicar el régimen RST de Ingresos si los ingresos
+  totales no superan el umbral; no obstante, conviene verificar si el cliente
+  extranjero requerirá facturas con NCF locales o si acepta facturas internacionales.
+- La Ley 158-01 de Confotur y otras leyes de fomento no aplican típicamente a
+  servicios TI puros, salvo que estén asociadas a inversiones turísticas u otras
+  actividades específicas.
+
+Este resumen no sustituye la consulta directa a la normativa oficial ni al
+asesoramiento profesional. Acuda a https://dgii.gov.do o a un CPA habilitado.

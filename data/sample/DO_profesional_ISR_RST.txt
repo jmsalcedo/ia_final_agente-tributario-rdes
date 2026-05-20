@@ -1,0 +1,134 @@
+RÉGIMEN FISCAL DEL PROFESIONAL INDEPENDIENTE EN REPÚBLICA DOMINICANA
+Fuente: Código Tributario (Ley 11-92), DGII. Documento sintético para indexación.
+
+==========================================================================
+1. MARCO LEGAL APLICABLE
+==========================================================================
+
+En República Dominicana, las personas físicas que ejercen una actividad económica
+independiente (profesionales liberales como ingenieros de software, consultores,
+abogados, médicos) tributan por el Impuesto Sobre la Renta (ISR) regulado en el
+Código Tributario (Ley 11-92) y sus reglamentos. La autoridad fiscal es la Dirección
+General de Impuestos Internos (DGII).
+
+Existen dos regímenes principales aplicables al profesional independiente:
+
+(a) RÉGIMEN ORDINARIO: aplicable por defecto. El contribuyente determina el ISR
+sobre la renta neta (ingresos brutos menos gastos deducibles documentados) y aplica
+la escala progresiva del artículo 296 del Código Tributario.
+
+(b) RÉGIMEN SIMPLIFICADO DE TRIBUTACIÓN (RST): regulado por la Norma General DGII
+06-2021 y modificaciones posteriores. Está dirigido a personas físicas y jurídicas con
+ingresos brutos anuales que no superen ciertos umbrales (actualizados periódicamente).
+Existen tres modalidades:
+   - RST de Ingresos (para servicios profesionales)
+   - RST de Compras (para comercio minorista)
+   - RST Agropecuario
+
+==========================================================================
+2. ESCALA DEL IMPUESTO SOBRE LA RENTA (PERSONAS FÍSICAS — RÉGIMEN ORDINARIO)
+==========================================================================
+
+La escala se ajusta anualmente por inflación. Para el ejercicio fiscal 2024 (cifras
+aproximadas en pesos dominicanos, RD$):
+
+- Rentas hasta 416.220,00: exentas (0%)
+- De 416.220,01 a 624.329,00: 15% sobre el excedente de 416.220
+- De 624.329,01 a 867.123,00: RD$ 31.216 + 20% sobre el excedente de 624.329
+- Más de 867.123,01: RD$ 79.776 + 25% sobre el excedente de 867.123
+
+La declaración anual se presenta mediante el Formulario IR-1 (Impuesto sobre la Renta
+de Personas Físicas) antes del 31 de marzo del año siguiente al ejercicio.
+
+==========================================================================
+3. GASTOS DEDUCIBLES PARA EL PROFESIONAL INDEPENDIENTE
+==========================================================================
+
+Conforme al artículo 287 del Código Tributario, son deducibles los gastos necesarios
+para producir la renta, debidamente documentados con comprobantes fiscales válidos
+(NCF — Número de Comprobante Fiscal). Categorías principales:
+
+- Honorarios pagados a terceros relacionados con la actividad.
+- Alquiler de local de trabajo (si está afecto a la actividad).
+- Suministros (electricidad, internet, teléfono) en la proporción de uso profesional.
+- Depreciación de bienes afectos a la actividad (computadoras, equipos, vehículos)
+  según las tasas del artículo 287 letra k del Código Tributario.
+- Cotizaciones obligatorias al Sistema Dominicano de Seguridad Social (SDSS) — TSS.
+- Gastos de capacitación profesional vinculados al ejercicio.
+- Gastos financieros relacionados con la actividad (intereses de préstamos productivos).
+- Impuestos no recuperables y tasas oficiales pagadas en el ejercicio.
+
+==========================================================================
+4. RÉGIMEN SIMPLIFICADO DE TRIBUTACIÓN — RST DE INGRESOS
+==========================================================================
+
+Está dirigido a personas físicas que prestan servicios profesionales y cuyos ingresos
+brutos anuales no superen el umbral fijado por la DGII (revisable anualmente; en torno
+a RD$ 8.7 millones para 2024 según última actualización publicada).
+
+Ventajas:
+- Sustituye al ISR ordinario y al ITBIS por un pago único.
+- La base imponible es el 80% de los ingresos brutos del año (presunción de gastos del 20%).
+- Sobre esa base se aplica la escala progresiva del artículo 296.
+- Pagos anticipados trimestrales de la cuota anual estimada.
+- Exonera de presentar contabilidad completa (sólo registro de ingresos).
+- Exonera del Anticipo de ISR sobre la renta neta.
+
+Limitaciones:
+- No pueden acogerse contribuyentes con relaciones comerciales con vinculadas.
+- Excluye actividades de comercio internacional o sujetas a regímenes especiales.
+- Una vez acogido, el contribuyente permanece como mínimo 3 años en el régimen.
+
+==========================================================================
+5. ITBIS (IVA DOMINICANO)
+==========================================================================
+
+El Impuesto sobre Transferencias de Bienes Industrializados y Servicios (ITBIS) grava
+a una tasa general del 18% los servicios profesionales prestados a empresas y a
+particulares (con excepciones específicas). Los profesionales que tributan en régimen
+ordinario deben presentar declaración mensual (Formulario IT-1) si superan los
+umbrales de inscripción. Quienes se acogen al RST de Ingresos están EXENTOS de
+declarar ITBIS, simplificación que constituye uno de los principales atractivos.
+
+==========================================================================
+6. OBLIGACIONES FORMALES Y SANCIONES
+==========================================================================
+
+- Inscripción en el Registro Nacional del Contribuyente (RNC) antes de iniciar.
+- Emisión de comprobantes fiscales electrónicos (e-CF) según calendario DGII.
+- Declaración anual IR-1 (antes del 31 de marzo).
+- Pagos del 5% sobre los honorarios cobrados de personas jurídicas como ANTICIPO
+  del ISR mediante retención efectuada por el pagador (Formulario IR-13).
+- Las sanciones por presentación tardía u omisión están reguladas en el Título I del
+  Código Tributario, con multas que pueden alcanzar de 5 a 30 salarios mínimos.
+
+==========================================================================
+7. ESTRATEGIAS LÍCITAS DE OPTIMIZACIÓN
+==========================================================================
+
+- Evaluar si conviene acogerse al RST de Ingresos: si los gastos reales superan el
+  20% de ingresos, conviene el régimen ordinario; si son inferiores, el RST.
+- Mantener documentación impecable de NCF para sustentar deducciones.
+- Aportaciones voluntarias a fondos de pensiones complementarios (deducibles dentro
+  de los límites del artículo 287 letra n).
+- Si los ingresos crecen sostenidamente, evaluar la creación de una sociedad mercantil
+  (SRL o SA) cuya tasa de ISR es del 27% sobre beneficios, comparable al tramo alto
+  de personas físicas pero con planificación de dividendos diferente.
+- Aprovechamiento de regímenes de fomento (Zonas Francas, Ley 28-01 de Desarrollo
+  Fronterizo, Ley 158-01 de Confotur para turismo) cuando aplique al sector.
+
+==========================================================================
+8. RIESGOS Y RESTRICCIONES
+==========================================================================
+
+- La DGII utiliza herramientas de cruce de información (e-CF, retenciones por
+  pagadores) que permiten detectar omisiones con facilidad.
+- La simulación de gastos o emisión de comprobantes sin sustento real puede
+  configurar evasión tributaria con sanciones penales según el Código Tributario.
+- Las operaciones con partes vinculadas deben respetar el principio de plena
+  competencia (precios de transferencia).
+- La permanencia obligatoria de 3 años en el RST genera rigidez; un cálculo erróneo
+  inicial puede resultar costoso.
+
+Este resumen sintetiza disposiciones del Código Tributario (Ley 11-92) y normas DGII.
+Para más detalles consulte https://dgii.gov.do o a un Contador Público Autorizado (CPA).
