@@ -14,7 +14,7 @@
 
 ## 🌐 Demo en vivo
 
-🔗 **Aplicación desplegada:** `https://ia-final-agente-tributario-rdes.onrender.com` *(reemplazar tras desplegar)*
+🔗 **Aplicación desplegada:** `https://ia-final-agente-tributario-rdes.onrender.com`
 
 📂 **Repositorio:** https://github.com/jmsalcedo/ia_final_agente-tributario-rdes
 
