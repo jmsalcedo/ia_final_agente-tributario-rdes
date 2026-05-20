@@ -1,21 +1,19 @@
 # ===================================================================
 # render.yaml — Configuración de despliegue automático en Render
-# Conecta este repo en https://dashboard.render.com como Web Service
-# y Render detectará este archivo automáticamente.
 # ===================================================================
 
 services:
   - type: web
-    name: ia_final_agente-tributario-rdes
+    name: agente-tributario-autonomo
     runtime: docker
     plan: free
-    region: frankfurt          # Cambiar a oregon/singapore según preferencia
+    region: frankfurt
     dockerfilePath: ./Dockerfile
     dockerContext: .
-    healthCheckPath: /_stcore/health
+
     envVars:
       # IMPORTANTE: añadir manualmente la clave en el panel de Render
-      # https://console.groq.com → API Keys
+      # https://console.groq.com → API Keys 
       - key: GROQ_API_KEY
         sync: false
       - key: GROQ_MODEL_ID
@@ -32,3 +30,12 @@ services:
         value: "0.3"
       - key: LLM_MAX_TOKENS
         value: "800"
+      # Streamlit: configuración para producción tras proxy
+      - key: STREAMLIT_SERVER_HEADLESS
+        value: "true"
+      - key: STREAMLIT_SERVER_ENABLE_CORS
+        value: "false"
+      - key: STREAMLIT_SERVER_ENABLE_XSRF_PROTECTION
+        value: "false"
+      - key: STREAMLIT_BROWSER_GATHER_USAGE_STATS
+        value: "false"
