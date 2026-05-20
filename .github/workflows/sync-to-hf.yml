@@ -1,0 +1,27 @@
+name: Sync to Hugging Face Spaces
+
+on:
+  push:
+    branches: [main]
+  # Permite ejecutar manualmente desde GitHub
+  workflow_dispatch:
+
+jobs:
+  sync-to-hub:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          lfs: true
+
+      - name: Push to Hugging Face Space
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_USER: jmsalcedo
+          HF_SPACE: agente-tributario-autonomo
+        run: |
+          git config --global user.email "jmsalcedo@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
+          git push --force https://${HF_USER}:${HF_TOKEN}@huggingface.co/spaces/${HF_USER}/${HF_SPACE} main
