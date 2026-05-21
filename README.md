@@ -36,7 +36,7 @@ Sistema multiagente cooperativo con tres roles especializados:
 
 ## 🔑 Configuración
 
-Esta aplicación requiere una clave de **Groq** (gratis, sin tarjeta):
+Esta aplicación requiere una clave de **Groq**:
 
 1. Crea cuenta en https://console.groq.com
 2. Genera una API key (empieza por `gsk_`)
@@ -47,7 +47,7 @@ Esta aplicación requiere una clave de **Groq** (gratis, sin tarjeta):
 
 ## 📂 Repositorio fuente
 
-Código completo en GitHub: https://github.com/jmsalcedo/agente-tributario-autonomo
+Código completo en GitHub: https://github.com/jmsalcedo/ia_final_agente-tributario-rdes
 
 ## ⚖️ Aviso legal
 
