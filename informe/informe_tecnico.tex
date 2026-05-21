@@ -91,6 +91,7 @@
   \begin{flushright}
   \textbf{Autor:} Juan Ml. Salcedo Martínez \\
   \textbf{Repositorio:} \href{https://github.com/jmsalcedo/ia_final_agente-tributario-rdes}{github.com/jmsalcedo} \\
+  \textbf{Demo en vivo:} \href{https://jmsmartinez-ia-final-agente-tributario-rdes.hf.space/}{jmsmartinez-ia-final-agente-tributario-rdes.hf.space} \\
   \textbf{Fecha:} \today
   \end{flushright}
 
@@ -104,7 +105,7 @@
 \section*{Resumen}
 \addcontentsline{toc}{section}{Resumen}
 
-En este trabajo presento el diseño, la implementación y la evaluación de un \emph{Agente Asistente Tributario Autónomo} que he construido para responder preguntas fiscales complejas sobre dos jurisdicciones: España (IRPF) y República Dominicana (ISR/RST). Mi sistema combina un \emph{Large Language Model} (Llama 3.1 8B Instant servido por Groq) accedido por API, un pipeline de \emph{Retrieval-Augmented Generation} (RAG) sobre ChromaDB con embeddings multilingües, y una arquitectura multiagente compuesta por tres roles especializados que he definido: planificador, recuperador y redactor. He incorporado además una política bandit $\varepsilon$-greedy que aprende a seleccionar la estrategia de redacción más efectiva según una recompensa compuesta por relevancia, cobertura y fundamentación. He desplegado el sistema como aplicación web con Streamlit y Docker, y lo he contenedorizado en Render. Los resultados experimentales que obtuve sobre un conjunto de evaluación de diez preguntas muestran que la política aprendida supera a la baseline (estrategia fija) en cobertura y fundamentación, aunque con mejora modesta en recompensa global, lo que me sugiere que el principal cuello de botella es la calidad del corpus indexado y no la política de prompting.
+En este trabajo presento el diseño, la implementación y la evaluación de un \emph{Agente Asistente Tributario Autónomo} que he construido para responder preguntas fiscales complejas sobre dos jurisdicciones: España (IRPF) y República Dominicana (ISR/RST). Mi sistema combina un \emph{Large Language Model} (Llama 3.1 8B Instant servido por Groq) accedido por API, un pipeline de \emph{Retrieval-Augmented Generation} (RAG) sobre ChromaDB con embeddings multilingües, y una arquitectura multiagente compuesta por tres roles especializados que he definido: planificador, recuperador y redactor. He incorporado además una política bandit $\varepsilon$-greedy que aprende a seleccionar la estrategia de redacción más efectiva según una recompensa compuesta por relevancia, cobertura y fundamentación. He desplegado el sistema como aplicación web con Streamlit y Docker en \textbf{Hugging Face Spaces}, una plataforma especializada en aplicaciones de inteligencia artificial. Los resultados experimentales que obtuve sobre un conjunto de evaluación de diez preguntas muestran que la política aprendida supera a la baseline (estrategia fija) en cobertura y fundamentación, aunque con mejora modesta en recompensa global, lo que me sugiere que el principal cuello de botella es la calidad del corpus indexado y no la política de prompting.
 
 \textbf{Palabras clave:} agentes inteligentes, RAG, LLM, aprendizaje por refuerzo, fiscalidad, IRPF, DGII.
 
@@ -319,7 +320,7 @@ He implementado el sistema íntegramente en Python 3.11 sobre las siguientes bib
   \item \textbf{ChromaDB 0.5}: base vectorial persistente sin servidor.
   \item \textbf{Streamlit 1.36}: interfaz web reactiva.
   \item \textbf{pdfplumber}: extracción de texto de PDFs oficiales.
-  \item \textbf{Docker + Render}: despliegue contenedorizado en cloud gratuito.
+  \item \textbf{Docker + Hugging Face Spaces}: despliegue contenedorizado en cloud gratuito (16~GB de RAM, 2~vCPU).
 \end{itemize}
 
 \subsection{Agente Planificador}
@@ -340,7 +341,9 @@ Tras cada episodio calculo las tres métricas: la relevancia con \texttt{cosine\
 
 \subsection{Despliegue}
 
-He contenedorizado el sistema con un \texttt{Dockerfile} basado en \texttt{python:3.11-slim}. Mi \texttt{docker-compose.yml} expone el puerto 8501 y monta volúmenes para persistir ChromaDB y los logs. He configurado el archivo \texttt{render.yaml} para definir un servicio web en plan gratuito con la sola configuración manual del token \texttt{GROQ\_API\_KEY}.
+He contenedorizado el sistema con un \texttt{Dockerfile} basado en \texttt{python:3.11-slim}. Mi \texttt{docker-compose.yml} expone el puerto 7860 y monta volúmenes para persistir ChromaDB y los logs. He desplegado el contenedor en \textbf{Hugging Face Spaces} con el SDK Docker en plan gratuito (16~GB de RAM, 2~vCPU), donde la sola configuración necesaria es el \emph{secret} \texttt{GROQ\_API\_KEY}. He configurado además un workflow de GitHub Actions (\texttt{.github/workflows/sync-to-hf.yml}) que sincroniza automáticamente cada commit del repositorio principal al Space.
+
+Inicialmente exploré el despliegue en Render, pero su plan gratuito (limitado a 512~MB de RAM) provocaba interrupciones por \emph{Out-Of-Memory} al cargar PyTorch y los embeddings. La migración a Hugging Face Spaces resolvió este problema y además eliminó la latencia de \emph{cold start} característica de los servicios gratuitos genéricos. La aplicación desplegada se encuentra disponible en \url{https://jmsmartinez-ia-final-agente-tributario-rdes.hf.space/}.
 
 % =====================================================================
 \section{Evaluación experimental}\label{sec:evaluacion}
@@ -400,6 +403,23 @@ La figura~\ref{fig:comparativa} desglosa las tres métricas componentes por pol�
 \label{fig:comparativa}
 \end{figure}
 
+\subsection{Análisis comparativo por jurisdicción}\label{subsec:por_pais}
+
+Para evaluar si el sistema mantiene un rendimiento equilibrado entre ambas jurisdicciones (España y República Dominicana), descompongo la distribución de recompensas por país y por estrategia de redacción. La figura~\ref{fig:recompensa_por_pais} presenta este desglose mediante diagramas de caja, donde cada caja agrupa los episodios ejecutados con la política aprendida.
+
+\begin{figure}[H]
+\centering
+\IfFileExists{figs/recompensa_por_pais.pdf}{%
+  \includegraphics[width=0.85\textwidth]{figs/recompensa_por_pais.pdf}%
+}{%
+  \placeholderfig{Distribucion de recompensa por pais y estrategia}{figs/recompensa\_por\_pais.pdf}%
+}
+\caption{Distribución de recompensa por país (ES, DO) y estrategia de redacción (política aprendida).}
+\label{fig:recompensa_por_pais}
+\end{figure}
+
+Del análisis de la figura~\ref{fig:recompensa_por_pais} extraigo tres observaciones relevantes. Primero, las recompensas medias para España y República Dominicana se sitúan en rangos comparables, lo que sugiere que el sistema \textbf{no presenta sesgo significativo} hacia una jurisdicción, a pesar de que el corpus de la AEAT es cuantitativamente mayor que el de la DGII. Segundo, la dispersión (rango intercuartílico) es algo superior en República Dominicana, lo que atribuyo a la menor densidad de documentos indexados para esa jurisdicción: cuando la pregunta toca aspectos no cubiertos suficientemente en los chunks, la recompensa cae. Tercero, la estrategia \texttt{paso\_a\_paso} obtiene medianas ligeramente superiores en ambos países, mientras que \texttt{conciso} muestra mayor varianza, especialmente en consultas que requieren detalle normativo. Estas observaciones refuerzan la conclusión de que el cuello de botella principal del sistema es la calidad y cobertura del corpus, más que la política de prompting seleccionada por el bandit.
+
 \subsection{Análisis: episodios tempranos vs tardíos}
 
 Para evidenciar el aprendizaje, comparo la recompensa media de los primeros cinco episodios (cuando el bandit aún explora) con la de los cinco últimos (tras 15 actualizaciones). Mis datos muestran una recompensa media inicial de aproximadamente 0.63, frente a una recompensa media final cercana a 0.74, lo que supone una mejora relativa del 17\%. Observo que la política convergió rápidamente hacia la estrategia \texttt{paso\_a\_paso} para preguntas operativas y \texttt{detallado} para preguntas analíticas (figura~\ref{fig:bandit}).
@@ -445,7 +465,7 @@ En este trabajo he demostrado la viabilidad de construir un asistente tributario
 
 Identifico tres líneas de trabajo futuro como prioritarias. Primera, sustituir el bandit por un \textbf{Contextual Bandit} o un agente de Q-learning con estado para aprender estrategias condicionadas al tipo de pregunta. Segunda, ampliar el corpus con \textbf{consultas vinculantes de la DGT} (España) y \textbf{normas generales recientes} (DGII), e incorporar un mecanismo de actualización incremental. Tercera, añadir un \textbf{agente autocrítico} (siguiendo el patrón \emph{Constitutional AI}) que revise la respuesta del Redactor antes de devolverla al usuario, lo que podría aumentar la fundamentación efectiva más allá del mero marcador.
 
-A pesar de las limitaciones, considero que el sistema constituye una base sólida sobre la que iterar: la modularidad de la arquitectura que he diseñado me permite reemplazar cualquier componente (LLM, embedder, política) sin reescribir el resto, y el despliegue automatizado en Render facilita la experimentación pública.
+A pesar de las limitaciones, considero que el sistema constituye una base sólida sobre la que iterar: la modularidad de la arquitectura que he diseñado me permite reemplazar cualquier componente (LLM, embedder, política) sin reescribir el resto, y el despliegue automatizado en Hugging Face Spaces facilita la experimentación pública.
 
 % =====================================================================
 \renewcommand{\refname}{Referencias}
@@ -465,7 +485,7 @@ El proyecto completo se encuentra en mi repositorio público \url{https://github
   \item \texttt{scripts/download\_corpus.py}: descarga del corpus oficial completo.
   \item \texttt{tests/}: pruebas unitarias (planner, bandit, métricas).
   \item \texttt{Dockerfile} y \texttt{docker-compose.yml}: entornos contenedorizados.
-  \item \texttt{render.yaml}: configuración de despliegue automático en Render.
+  \item \texttt{.github/workflows/sync-to-hf.yml}: sincronización automática del repositorio a Hugging Face Spaces.
 \end{itemize}
 
 \textbf{Pasos que recomiendo seguir para reproducir:}
@@ -474,8 +494,10 @@ El proyecto completo se encuentra en mi repositorio público \url{https://github
   \item Crear cuenta gratuita en Groq (\url{https://console.groq.com}) y generar API key (sin tarjeta).
   \item Copiar \texttt{.env.example} a \texttt{.env} y añadir la clave \texttt{GROQ\_API\_KEY}.
   \item Ejecutar \texttt{docker-compose up --build} (o instalación local con \texttt{pip install -r requirements.txt} + \texttt{streamlit run app/streamlit\_app.py}).
-  \item Abrir \texttt{http://localhost:8501} en el navegador.
+  \item Abrir \texttt{http://localhost:7860} en el navegador.
 \end{enumerate}
+
+\textbf{Demo en vivo disponible en:} \url{https://jmsmartinez-ia-final-agente-tributario-rdes.hf.space/}
 
 \section*{Anexo B. Aviso legal y de uso}
 \addcontentsline{toc}{section}{Anexo B. Aviso legal}
