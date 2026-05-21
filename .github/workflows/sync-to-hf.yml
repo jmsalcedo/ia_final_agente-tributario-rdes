@@ -1,0 +1,101 @@
+name: Sync to Hugging Face Spaces
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  sync-to-hub:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Show files BEFORE cleaning
+        run: |
+          echo "=== ARCHIVOS BINARIOS ANTES DE LIMPIAR ==="
+          find . -type f \( \
+            -name "*.pdf" -o \
+            -name "*.png" -o \
+            -name "*.jpg" -o \
+            -name "*.jpeg" -o \
+            -name "*.zip" -o \
+            -name "*.docx" -o \
+            -name "*.xlsx" -o \
+            -name "*.pptx" -o \
+            -name "*.gif" \
+          \) ! -path "./.git/*" || echo "Ninguno encontrado"
+
+      - name: Remove ALL binary files aggressively
+        run: |
+          # Borrar archivos binarios con multiples patrones
+          find . -type f \( \
+            -iname "*.pdf" -o \
+            -iname "*.png" -o \
+            -iname "*.jpg" -o \
+            -iname "*.jpeg" -o \
+            -iname "*.gif" -o \
+            -iname "*.zip" -o \
+            -iname "*.tar" -o \
+            -iname "*.tar.gz" -o \
+            -iname "*.docx" -o \
+            -iname "*.xlsx" -o \
+            -iname "*.pptx" -o \
+            -iname "*.bin" -o \
+            -iname "*.safetensors" \
+          \) ! -path "./.git/*" -exec rm -fv {} \;
+
+          # Tambien borrar la carpeta figs entera por si acaso
+          rm -rfv informe/figs/ || true
+
+          # Y cualquier subdirectorio chroma_db pre-cacheado
+          rm -rfv chroma_db/ || true
+          rm -rfv data/raw/ || true
+
+      - name: Show files AFTER cleaning (debe estar vacio)
+        run: |
+          echo "=== ARCHIVOS BINARIOS DESPUES DE LIMPIAR (debe estar vacio) ==="
+          find . -type f \( \
+            -iname "*.pdf" -o \
+            -iname "*.png" -o \
+            -iname "*.jpg" -o \
+            -iname "*.jpeg" -o \
+            -iname "*.zip" -o \
+            -iname "*.docx" -o \
+            -iname "*.xlsx" -o \
+            -iname "*.pptx" -o \
+            -iname "*.gif" \
+          \) ! -path "./.git/*" || echo "OK: ningun binario queda"
+
+          echo ""
+          echo "=== ESTRUCTURA FINAL DE ARCHIVOS ==="
+          find . -type f ! -path "./.git/*" | sort
+
+      - name: Create fresh repo (no history, no binaries)
+        run: |
+          rm -rf .git
+          git init -b main
+          git config user.email "jmsalcedo@users.noreply.github.com"
+          git config user.name "GitHub Actions"
+          git add -A
+          git status --short
+          git commit -m "Deploy to HF Spaces (clean snapshot, no binaries)"
+
+      - name: Verify commit has no binaries
+        run: |
+          echo "=== ARCHIVOS EN EL COMMIT ==="
+          git ls-tree -r HEAD --name-only | grep -iE '\.(pdf|png|jpg|jpeg|gif|zip|docx|xlsx|pptx)$' && {
+            echo "ERROR: Aun hay binarios en el commit"
+            exit 1
+          } || echo "OK: ningun binario en el commit"
+
+      - name: Push to Hugging Face Space
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_USER: jmsmartinez
+          HF_SPACE: ia_final_agente-tributario-rdes
+        run: |
+          git push --force "https://${HF_USER}:${HF_TOKEN}@huggingface.co/spaces/${HF_USER}/${HF_SPACE}" main
