@@ -5,7 +5,8 @@ services:
     build: .
     container_name: ia_final_agente-tributario-rdes
     ports:
-      - "8501:8501"
+      # Puerto 7860 para coherencia con HF Spaces
+      - "7860:7860"
     env_file:
       - .env
     volumes:
@@ -17,7 +18,7 @@ services:
       - ./logs:/app/logs
     restart: unless-stopped
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      test: ["CMD", "curl", "-f", "http://localhost:7860/_stcore/health"]
       interval: 30s
       timeout: 10s
       retries: 3

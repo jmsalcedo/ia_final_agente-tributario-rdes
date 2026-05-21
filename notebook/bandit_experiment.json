@@ -1,201 +1,210 @@
 {
   "counts": {
-    "conciso": 2,
-    "detallado": 4,
-    "paso_a_paso": 15
+    "conciso": 19,
+    "detallado": 2,
+    "paso_a_paso": 1
   },
   "rewards": {
-    "conciso": 1.0975318213717804,
-    "detallado": 2.256349201806825,
-    "paso_a_paso": 8.539002025185416
+    "conciso": 10.993462930003961,
+    "detallado": 1.0673785542909588,
+    "paso_a_paso": 0.5288227781653404
   },
   "history": [
     {
       "episode": 1,
-      "arm": "conciso",
-      "reward": 0.5316,
+      "arm": "paso_a_paso",
+      "reward": 0.5288,
       "pais": "ES",
-      "relevance": 0.515,
+      "relevance": 0.508,
       "coverage": 1.0,
       "grounding": 0.0
     },
     {
       "episode": 2,
       "arm": "detallado",
-      "reward": 0.6111,
+      "reward": 0.5214,
       "pais": "ES",
-      "relevance": 0.489,
-      "coverage": 1.0,
-      "grounding": 0.364
-    },
-    {
-      "episode": 3,
-      "arm": "paso_a_paso",
-      "reward": 0.6391,
-      "pais": "ES",
-      "relevance": 0.501,
-      "coverage": 1.0,
-      "grounding": 0.455
-    },
-    {
-      "episode": 4,
-      "arm": "paso_a_paso",
-      "reward": 0.576,
-      "pais": "ES",
-      "relevance": 0.567,
-      "coverage": 1.0,
-      "grounding": 0.083
-    },
-    {
-      "episode": 5,
-      "arm": "detallado",
-      "reward": 0.527,
-      "pais": "ES",
-      "relevance": 0.467,
-      "coverage": 1.0,
-      "grounding": 0.067
-    },
-    {
-      "episode": 6,
-      "arm": "paso_a_paso",
-      "reward": 0.5899,
-      "pais": "DO",
-      "relevance": 0.644,
+      "relevance": 0.492,
       "coverage": 1.0,
       "grounding": 0.0
     },
     {
-      "episode": 7,
-      "arm": "paso_a_paso",
-      "reward": 0.4877,
+      "episode": 3,
+      "arm": "conciso",
+      "reward": 0.5742,
+      "pais": "ES",
+      "relevance": 0.508,
+      "coverage": 1.0,
+      "grounding": 0.182
+    },
+    {
+      "episode": 4,
+      "arm": "detallado",
+      "reward": 0.546,
+      "pais": "ES",
+      "relevance": 0.507,
+      "coverage": 1.0,
+      "grounding": 0.071
+    },
+    {
+      "episode": 5,
+      "arm": "conciso",
+      "reward": 0.5326,
+      "pais": "ES",
+      "relevance": 0.466,
+      "coverage": 1.0,
+      "grounding": 0.091
+    },
+    {
+      "episode": 6,
+      "arm": "conciso",
+      "reward": 0.6064,
       "pais": "DO",
-      "relevance": 0.367,
+      "relevance": 0.635,
+      "coverage": 1.0,
+      "grounding": 0.083
+    },
+    {
+      "episode": 7,
+      "arm": "conciso",
+      "reward": 0.5382,
+      "pais": "DO",
+      "relevance": 0.479,
       "coverage": 1.0,
       "grounding": 0.091
     },
     {
       "episode": 8,
-      "arm": "paso_a_paso",
-      "reward": 0.5462,
+      "arm": "conciso",
+      "reward": 0.5559,
       "pais": "DO",
-      "relevance": 0.547,
+      "relevance": 0.518,
       "coverage": 1.0,
-      "grounding": 0.0
+      "grounding": 0.091
     },
     {
       "episode": 9,
-      "arm": "detallado",
-      "reward": 0.5397,
+      "arm": "conciso",
+      "reward": 0.6682,
       "pais": "DO",
-      "relevance": 0.496,
+      "relevance": 0.571,
       "coverage": 1.0,
-      "grounding": 0.067
+      "grounding": 0.444
     },
     {
       "episode": 10,
-      "arm": "paso_a_paso",
-      "reward": 0.6321,
+      "arm": "conciso",
+      "reward": 0.5529,
       "pais": "DO",
-      "relevance": 0.486,
+      "relevance": 0.512,
       "coverage": 1.0,
-      "grounding": 0.455
+      "grounding": 0.091
     },
     {
       "episode": 11,
-      "arm": "paso_a_paso",
-      "reward": 0.5819,
+      "arm": "conciso",
+      "reward": 0.5575,
       "pais": "ES",
-      "relevance": 0.515,
+      "relevance": 0.522,
       "coverage": 1.0,
-      "grounding": 0.2
+      "grounding": 0.091
     },
     {
       "episode": 12,
-      "arm": "paso_a_paso",
-      "reward": 0.6101,
+      "arm": "conciso",
+      "reward": 0.5883,
       "pais": "ES",
-      "relevance": 0.538,
+      "relevance": 0.594,
+      "coverage": 1.0,
+      "grounding": 0.083
+    },
+    {
+      "episode": 13,
+      "arm": "conciso",
+      "reward": 0.5866,
+      "pais": "ES",
+      "relevance": 0.485,
       "coverage": 1.0,
       "grounding": 0.273
     },
     {
-      "episode": 13,
-      "arm": "paso_a_paso",
-      "reward": 0.591,
-      "pais": "ES",
-      "relevance": 0.488,
-      "coverage": 1.0,
-      "grounding": 0.286
-    },
-    {
       "episode": 14,
-      "arm": "paso_a_paso",
-      "reward": 0.5068,
+      "arm": "conciso",
+      "reward": 0.5416,
       "pais": "ES",
-      "relevance": 0.46,
-      "coverage": 1.0,
-      "grounding": 0.0
-    },
-    {
-      "episode": 15,
-      "arm": "paso_a_paso",
-      "reward": 0.514,
-      "pais": "ES",
-      "relevance": 0.436,
+      "relevance": 0.497,
       "coverage": 1.0,
       "grounding": 0.071
     },
     {
-      "episode": 16,
-      "arm": "detallado",
-      "reward": 0.5785,
-      "pais": "DO",
-      "relevance": 0.573,
-      "coverage": 1.0,
-      "grounding": 0.083
-    },
-    {
-      "episode": 17,
-      "arm": "paso_a_paso",
-      "reward": 0.5539,
-      "pais": "DO",
-      "relevance": 0.518,
-      "coverage": 1.0,
-      "grounding": 0.083
-    },
-    {
-      "episode": 18,
+      "episode": 15,
       "arm": "conciso",
-      "reward": 0.566,
-      "pais": "DO",
-      "relevance": 0.529,
-      "coverage": 1.0,
-      "grounding": 0.111
-    },
-    {
-      "episode": 19,
-      "arm": "paso_a_paso",
-      "reward": 0.5531,
-      "pais": "DO",
-      "relevance": 0.52,
+      "reward": 0.5355,
+      "pais": "ES",
+      "relevance": 0.481,
       "coverage": 1.0,
       "grounding": 0.077
     },
     {
-      "episode": 20,
-      "arm": "paso_a_paso",
-      "reward": 0.6293,
+      "episode": 16,
+      "arm": "conciso",
+      "reward": 0.7055,
       "pais": "DO",
-      "relevance": 0.5,
+      "relevance": 0.623,
       "coverage": 1.0,
-      "grounding": 0.417
+      "grounding": 0.5
+    },
+    {
+      "episode": 17,
+      "arm": "conciso",
+      "reward": 0.6296,
+      "pais": "DO",
+      "relevance": 0.536,
+      "coverage": 1.0,
+      "grounding": 0.353
+    },
+    {
+      "episode": 18,
+      "arm": "conciso",
+      "reward": 0.4631,
+      "pais": "DO",
+      "relevance": 0.523,
+      "coverage": 0.667,
+      "grounding": 0.111
+    },
+    {
+      "episode": 19,
+      "arm": "conciso",
+      "reward": 0.5767,
+      "pais": "DO",
+      "relevance": 0.536,
+      "coverage": 1.0,
+      "grounding": 0.143
+    },
+    {
+      "episode": 20,
+      "arm": "conciso",
+      "reward": 0.5964,
+      "pais": "DO",
+      "relevance": 0.507,
+      "coverage": 1.0,
+      "grounding": 0.273
     },
     {
       "episode": 21,
-      "arm": "paso_a_paso",
-      "reward": 0.5277,
+      "arm": "conciso",
+      "reward": 0.6278,
       "pais": "ES",
-      "relevance": 0.506,
+      "relevance": 0.451,
+      "coverage": 1.0,
+      "grounding": 0.5
+    },
+    {
+      "episode": 22,
+      "arm": "conciso",
+      "reward": 0.5563,
+      "pais": "DO",
+      "relevance": 0.57,
       "coverage": 1.0,
       "grounding": 0.0
     }
